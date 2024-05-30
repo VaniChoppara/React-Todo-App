@@ -15,8 +15,7 @@ export function TodoEditTask(){
         axios.get(`http://127.0.0.1:5050/view-task/${params.id}`)
         .then( (res)=>{
             setAppointments(res.data);
-            
-        }
+            }
        )
     },[]);
 
